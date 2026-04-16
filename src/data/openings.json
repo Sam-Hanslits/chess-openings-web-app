@@ -1,0 +1,568 @@
+{
+    "openings": [
+    {
+        "id": "karo-kann-defense",
+        "name": "Karo-Kann Defense",
+        "description": "The Caro-Kann Defense is known above all for its solidity. The defining move, 1...c6, is the fourth most popular reply to 1.e4 and nearly twice as common as the number five move. It prepares for 2...d5 without blocking in the light-squared bishop, which is considered the main drawback of its cousin the French Defense (1.e4 e6). A standby for positional players at almost every level, the Caro-Kann was a particular favorite of world champion GM Anatoly Karpov. (Chess.com)",
+        "color": "black",
+        "lines": [
+            {
+            "name": "Classical Variation",
+            "id": "kk1",
+            "moves": ["e4", "c6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Bf5"]
+            },
+            {
+            "name": "Fantasy Variation",
+            "id": "kk2",
+            "moves": ["e4", "c6", "d4", "d5", "f3"]
+            },
+            {
+            "name": "Advance Variation",
+            "id": "kk3",
+            "moves": ["e4", "c6", "d4", "d5", "e5", "Bf5"]
+            },
+            {
+            "name": "Exchange Variation",
+            "id": "kk4",
+            "moves": ["e4", "c6", "d4", "d5", "exd5", "cxd5", "Bd3"]
+            },
+            {
+            "name": "Panov-Botvinnik Attack",
+            "id": "kk5",
+            "moves": ["e4", "c6", "d4", "d5", "exd5", "cxd5", "c4"]
+            }
+        ]
+    },
+    {
+        "id": "scandinavian-defense",
+        "name": "Scandinavian Defense",
+        "description": "The Scandinavian Defense, formerly better known in English language texts as the Center-Counter, is Black's seventh most popular response to 1.e4.",
+        "color": "black",
+        "lines": [
+            {
+            "name": "Main Line",
+            "id": "sc1",
+            "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5"]
+            },
+            {
+            "name": "Portuguese Variation",
+            "id": "sc2",
+            "moves": ["e4", "d5", "exd5", "Nf6"]
+            },
+            {
+            "name": "Modern Variation",
+            "id": "sc3",
+            "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qd6"]
+            },
+            {
+            "name": "Gubinsky-Melts Defense",
+            "id": "sc4",
+            "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qe5+"]
+            },
+            {
+            "name": "Icelandic-Palme Gambit",
+            "id": "sc5",
+            "moves": ["e4", "d5", "exd5", "Nf6", "c4", "e6"]
+            }
+        ]
+    },
+    {
+        "id": "sicilian-defense",
+        "name": "Sicilian Defense",
+        "description": "The Sicilian Defense is the most popular response to White's 1.e4. Employed by masters and beginners alike, the Sicilian Defense is a reputable and positionally sound opening. Still, the Sicilian is a combative opening that tends to lead to dynamic and sharp positions.One of the oldest registered openings, the Sicilian is full of theory and was used by most of the greatest players in history. World champions GMs Bobby Fischer, Garry Kasparov, Viswanathan Anand, Vladimir Kramnik, and Magnus Carlsen are just a few of its adopters.",
+        "color": "black",
+        "lines": [
+            {
+                "name": "Najdorf Variation",
+                "id": "sic1",
+                "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6"]
+            },
+            {
+                "name": "Dragon Variation",
+                "id": "sic2",
+                "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6"]
+            },
+            {
+                "name": "Classical Variation",
+                "id": "sic3",
+                "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "Nc6"]
+            },
+            {
+                "name": "French Variation",
+                "id": "sic4",
+                "moves": ["e4", "c5", "Nf3", "e6"]
+            },
+            {
+                "name": "Scheveningen Variation",
+                "id": "sic5",
+                "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e6"]
+            }
+        ]
+    },
+    {
+        "id": "ruy-lopez",
+        "name": "Ruy López",
+        "description": "The Ruy Lopez (also known as the Spanish Opening or Spanish Game) is one of the oldest and most analyzed openings in chess history. Most of the world's top players have adopted this rich opening as part of their repertoire, and many of them play it with both colors. Despite having a large amount of theory, it is an opening that players of all levels can enjoy.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Morphy Defense",
+                "id": "rl1",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6"]
+            },
+            {
+                "name": "Berlin Defense",
+                "id": "rl2",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"]
+            },
+            {
+                "name": "Classical Variation",
+                "id": "rl3",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Bc5"]
+            },
+            {
+                "name": "Exchange Variation",
+                "id": "rl4",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6"]
+            },
+            {
+                "name": "Steinitz Defense",
+                "id": "rl5",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "d6"]
+            }
+        ]
+    },
+    {
+        "id": "queens-gambit",
+        "name": "Queen's Gambit",
+        "description": "The Queen's Gambit is one of the oldest and most reputable 1.d4 openings for White. Unlike 1.e4 openings, the Queen's Gambit usually evolves into a strategic game rather than an all-out tactical battle. Despite being around for centuries, this opening is still one of the cornerstones of every elite players' repertoire. It's also an excellent choice for beginners and intermediate players.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Accepted: Classical Variation",
+                "id": "qg1",
+                "moves": ["d4", "d5", "c4", "dxc4", "Nf3", "Nf6", "e3", "e6", "Bxc4", "c5", "O-O"]
+            },
+            {
+                "name": "Declined: Orthodox Defense",
+                "id": "qg2",
+                "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7"]
+            },
+            {
+                "name": "Declined: Three Knights Variation",
+                "id": "qg3",
+                "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Nf3"]
+            },
+            {
+                "name": "Declined: Chigorin Defense",
+                "id": "qg4",
+                "moves": ["d4", "d5", "c4", "Nc6"]
+            },
+            {
+                "name": "Declined: Exchange Variation",
+                "id": "qg5",
+                "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "cxd5", "exd5"]
+            },
+            {
+                "name": "Accepted: Central Variation",
+                "id": "qg6",
+                "moves": ["d4", "d5", "c4", "dxc4", "e4"]
+            }
+        ]
+    },
+    {
+        "id": "italian-game",
+        "name": "Italian Game",
+        "description": "The Italian Game is one of the oldest openings in chess and has been around for centuries. This classical 1.e4 opening can lead to slower and positional games as well as open, tactical battles. Although very common among beginners, the Italian Game is a part of the repertoire of players of every level.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Giuoco Piano",
+                "id": "it1",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5"]
+            },
+            {
+                "name": "Two Knights Defense",
+                "id": "it2",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6"]
+            },
+            {
+                "name": "Evans Gambit",
+                "id": "it3",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4"]
+            },
+            {
+                "name": "Max Lange Attack",
+                "id": "it4",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "d4", "exd4", "O-O", "Bc5", "e5"]
+            },
+            {
+                "name": "Fried Liver Attack",
+                "id": "it5",
+                "moves": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Nf6", "Ng5", "d5", "exd5", "Nxd5", "Nxf7"]
+            }
+        ]
+    },
+    {
+        "id": "english-opening",
+        "name": "English Opening",
+        "description": "The English Opening is a flank opening where White advances their c-pawn two squares instead of the d- or e-pawns. The English is a highly transpositional opening, meaning that in many cases the game will reach the same position that arises from other openings and through different move orders. The English Opening is most suitable for intermediate and advanced players and demands more understanding of positional concepts.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Symmetrical, Four Knights",
+                "id": "en1",
+                "moves": ["c4", "c5", "Nc3", "Nc6", "Nf3", "Nf6"]
+            },
+            {
+                "name": "Reversed Sicilian",
+                "id": "en2",
+                "moves": ["c4", "e5", "Nc3"]
+            },
+            {
+                "name": "King's Indian Attack setup",
+                "id": "en3",
+                "moves": ["c4", "Nf6", "g3", "g6", "Bg2", "Bg7", "Nc3", "O-O"]
+            },
+            {
+                "name": "Botvinnik System",
+                "id": "en4",
+                "moves": ["c4", "c5", "g3", "Nc6", "Bg2", "g6", "e4", "Bg7", "Nc3"]
+            },
+            {
+                "name": "Anglo-Indian Defense",
+                "id": "en5",
+                "moves": ["c4", "Nf6", "Nc3", "e6"]
+            }
+        ]
+    },
+    {
+        "id": "london-system",
+        "name": "London System",
+        "description": "The London System is a popular 1.d4 opening for White which has the reputation of being very solid. The London is considered a system because White can play the same basic setup for almost all of Black's responses. For this reason, the theory on the London is not as extensive as it is for other openings.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Main Line",
+                "id": "lon1",
+                "moves": ["d4", "d5", "Bf4", "Nf6", "e3"]
+            },
+            {
+                "name": "Against King's Indian Setup",
+                "id": "lon2",
+                "moves": ["d4", "Nf6", "Bf4", "g6"]
+            },
+            {
+                "name": "Jobava London",
+                "id": "lon3",
+                "moves": ["d4", "d5", "Nc3", "Nf6", "Bf4"]
+            },
+            {
+                "name": "Accelerated London",
+                "id": "lon4",
+                "moves": ["d4", "d5", "Bf4", "c5"]
+            },
+            {
+                "name": "Against Queen's Indian Setup",
+                "id": "lon5",
+                "moves": ["d4", "Nf6", "Bf4", "b6"]
+            }
+        ]
+    },
+    {
+        "id": "dutch-defense",
+        "name": "Dutch Defense",
+        "description": "The Dutch Defense might look like a reverse version of the Sicilian (1.e4 c5) - since both moves use a wing-pawn to mechanically prevent the creation of the 'perfect pawn center' by White. But due to the king positions, the Dutch is very different. 1...f5 gains space on the kingside at the expense of some weaknesses.",
+        "color": "black",
+        "lines": [
+            {
+                "name": "Stonewall Variation",
+                "id": "du1",
+                "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "e6", "Nf3", "d5"]
+            },
+            {
+                "name": "Leningrad Variation",
+                "id": "du2",
+                "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "g6"]
+            },
+            {
+                "name": "Classical Variation",
+                "id": "du3",
+                "moves": ["d4", "f5", "c4", "Nf6", "g3", "e6", "Bg2", "Be7"]
+            },
+            {
+                "name": "Staunton Gambit",
+                "id": "du4",
+                "moves": ["d4", "f5", "e4"]
+            },
+            {
+                "name": "Ilyin-Zhenevsky System",
+                "id": "du5",
+                "moves": ["d4", "f5", "c4", "Nf6", "Nc3", "e6", "Nf3", "d5"]
+            }
+        ]
+    },
+    {
+        "id": "french-defense",
+        "name": "French Defense",
+        "description": "The French Defense is one of the most popular Black responses to 1.e4. It has consistently been a part of masters' repertoire since the 1800s and one of the favorites of positional players. Usually leading to slower games, this opening is a good choice for players of all levels.",
+        "color": "black",
+        "lines": [
+            {
+                "name": "Advance Variation",
+                "id": "fr1",
+                "moves": ["e4", "e6", "d4", "d5", "e5"]
+            },
+            {
+                "name": "Exchange Variation",
+                "id": "fr2",
+                "moves": ["e4", "e6", "d4", "d5", "exd5", "exd5"]
+            },
+            {
+                "name": "Tarrasch Variation",
+                "id": "fr3",
+                "moves": ["e4", "e6", "d4", "d5", "Nd2"]
+            },
+            {
+                "name": "Winawer Variation",
+                "id": "fr4",
+                "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4"]
+            },
+            {
+                "name": "Classical Variation",
+                "id": "fr5",
+                "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6"]
+            }
+        ]
+    },
+    {
+        "id": "vienna-game",
+        "name": "Vienna Game",
+        "description": "The Vienna Game is a 1.e4 opening for White. Compared to other 1.e4 openings, the Vienna is much less common but theoretically sound. Because of this, it can be an excellent weapon for beginners to catch their opponents by surprise. The Vienna is also suitable for more experienced players, with GMs like Viswanathan Anand and Alexander Shabalov among the players who have played it.",
+        "color": "white",
+        "lines": [
+            {
+                "name": "Main Line",
+                "id": "vi1",
+                "moves": ["e4", "e5", "Nc3", "Nf6"]
+            },
+            {
+                "name": "Vienna Gambit",
+                "id": "vi2",
+                "moves": ["e4", "e5", "Nc3", "Nf6", "f4"]
+            },
+            {
+                "name": "Falkbeer-Nimzowitsch Variation",
+                "id": "vi3",
+                "moves": ["e4", "e5", "Nc3", "Nf6", "f4", "d5"]
+            },
+            {
+                "name": "Stanley Variation",
+                "id": "vi4",
+                "moves": ["e4", "e5", "Nc3", "Nc6"]
+            },
+            {
+                "name": "Frankenstein-Dracula Variation",
+                "id": "vi5",
+                "moves": ["e4", "e5", "Nc3", "Nf6", "Bc4", "Nxe4"]
+            }
+        ]
+    },
+    {
+        "id": "slav-defense",
+        "name": "Slav Defense",
+        "description": "The Slav Defense is a solid opening for Black in response to White's Queen's Gambit (1.d4 d5 2.c4). Black fights for equality against one of White's most popular openings without creating a bad light-squared bishop—one of the downsides of other defenses like the French Defense and the Queen's Gambit Declined.",
+        "color": "black",
+        "lines": [
+            {
+                "name": "Main Line",
+                "id": "sl1",
+                "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "dxc4"]
+            },
+            {
+                "name": "Exchange Variation",
+                "id": "sl2",
+                "moves": ["d4", "d5", "c4", "c6", "cxd5", "cxd5"]
+            },
+            {
+                "name": "Semi-Slav Defense",
+                "id": "sl3",
+                "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6"]
+            },
+            {
+                "name": "Chebanenko Variation (Chameleon)",
+                "id": "sl4",
+                "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6"]
+            },
+            {
+                "name": "Alapin Variation",
+                "id": "sl5",
+                "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6", "a4"]
+            }
+        ]
+    },
+    {
+        "id": "kings-indian-defense",
+        "name": "King's Indian Defense",
+        "description": "The King's Indian Defense is a hypermodern aggressive opening for Black as a response for 1.d4. Following hypermodern principles, Black allows White to build a strong pawn center to later counter-attack it. A sharp opening, the King's Indian is not be the best choice for beginners. However, a number of strong grandmasters like Bobby Fischer and Garry Kasparov consistently employed this opening when fighting for a win with the black pieces.",
+        "color": "black",
+        "lines": [
+            {
+                "name": "Classical Variation",
+                "id": "ki1",
+                "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5"]
+            },
+            {
+                "name": "Sämisch Variation",
+                "id": "ki2",
+                "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3"]
+            },
+            {
+                "name": "Fianchetto Variation",
+                "id": "ki3",
+                "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3"]
+            },
+            {
+                "name": "Averbakh Variation",
+                "id": "ki4",
+                "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Be2", "O-O", "Bg5"]
+            },
+            {
+                "name": "Four Pawns Attack",
+                "id": "ki5",
+                "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f4"]
+            }
+        ]
+    },
+    {
+        "id": "pirc-defense",
+        "name": "Pirc Defense",
+        "description": "The Pirc Defense is a hypermodern way for Black to respond to White's 1.e4. Relatively new, the Pirc revolves around a quick kingside fianchetto by black. Strong players such as GMs Vladimir Kramnik and Shakhriyar Mamedyarov frequently use the Pirc to fight for a win.Although players of all levels can play the Pirc, beginners should be careful when employing this opening. As with other hypermodern openings, White can use their central control and space advantage to roll over the unprepared Black player.",
+        "color": "black",
+        "lines": [
+            { "name": "Austrian Attack", "id": "pirc1", "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "f4"] },
+            { "name": "Classical System", "id": "pirc2", "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "Nf3"] },
+            { "name": "Byrne Variation", "id": "pirc3", "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "Bg5"] },
+            { "name": "150 Attack", "id": "pirc4", "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "Be3", "c6", "Qd2"] },
+            { "name": "Fianchetto System", "id": "pirc5", "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "g3"] }
+        ]
+    },
+    {
+        "id": "alekhines-defense",
+        "name": "Alekhine's Defense",
+        "description": "Alekhine's Defense is a hypermodern response to 1.e4. Black lets White establish a presence in the center with the goal of proving it overextended. Although 1...Nf6 is only Black's eighth-most popular response to 1.e4, it scores as well as some much more common moves like the #3 French (1...e6) and #5 Pirc (1...d6).",
+        "color": "black",
+        "lines": [
+            { "name": "Four Pawns Attack", "id": "al1", "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "c4", "Nb6", "f4"] },
+            { "name": "Exchange Variation", "id": "al2", "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "c4", "Nb6", "exd6"] },
+            { "name": "Modern Variation", "id": "al3", "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "Nf3"] },
+            { "name": "Scandinavian Variation", "id": "al4", "moves": ["e4", "Nf6", "Nc3", "d5"] },
+            { "name": "Chase Variation", "id": "al5", "moves": ["e4", "Nf6", "e5", "Nd5", "c4", "Nb6", "c5"] }
+        ]
+    },
+    {
+        "id": "scotch-game",
+        "name": "Scotch Game",
+        "description": "The Scotch Game is a centuries-old 1.e4 opening for White and one of the best alternatives to the Ruy Lopez. A good opening for beginners, the Scotch is also an excellent weapon for players of every strength level. One of its most prominent adopters was GM Garry Kasparov. Other elite players like GMs Vladimir Kramnik, Levon Aronian, and Magnus Carlsen also have the Scotch as part of their arsenal.",
+        "color": "white",
+        "lines": [
+            { "name": "Main Line", "id": "sco1", "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6"] },
+            { "name": "Schmidt Variation", "id": "sco2", "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "d6"] },
+            { "name": "Mieses Variation", "id": "sco3", "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Nxd4", "Nf6", "Nxc6", "bxc6", "e5"] },
+            { "name": "Scotch Gambit", "id": "sco4", "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "Bc4"] },
+            { "name": "Göring Gambit", "id": "sco5", "moves": ["e4", "e5", "Nf3", "Nc6", "d4", "exd4", "c3"] }
+        ]
+    },
+    {
+        "id": "nimzo-indian-defense",
+        "name": "Nimzo-Indian Defense",
+        "description": "The Nimzo-Indian Defense (often called the Nimzo for short) is considered one of Black's best responses to White's 1.d4 opener. Black often gives up the bishop pair, but in exchange receives the better pawn structure and easy development. Black will also try to keep the position closed, while White seeks to open up the center for the two bishops.",
+        "color": "black",
+        "lines": [
+            { "name": "Rubinstein System", "id": "ni1", "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "e3"] },
+            { "name": "Classical Variation", "id": "ni2", "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "Qc2"] },
+            { "name": "Sämisch Variation", "id": "ni3", "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "a3"] },
+            { "name": "Leningrad Variation", "id": "ni4", "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "Bg5"] },
+            { "name": "Hübner Variation", "id": "ni5", "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "e3", "c5", "Nf3"] }
+        ]
+    },
+    {
+        "id": "catalan-opening",
+        "name": "Catalan Opening",
+        "description": "The Catalan Opening is a 1.d4 opening where White seeks to combine the kingside fianchetto with pawns on d4/c4. Instead of a direct kingside attack, White will aim for long-term positional pressure in the center and on Black's queenside. These positions can lead to small and nagging edges with very technical endgames.",
+        "color": "white",
+        "lines": [
+            { "name": "Open, Main Line", "id": "cat1", "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Nf3"] },
+            { "name": "Closed, Main Line", "id": "cat2", "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "Be7"] },
+            { "name": "Open, Classical Line", "id": "cat3", "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "dxc4", "Nf3", "Be7"] },
+            { "name": "Closed, 5...a6", "id": "cat4", "moves": ["d4", "Nf6", "c4", "e6", "g3", "d5", "Bg2", "a6"] },
+            { "name": "Open, Bogo-Indian Variation", "id": "cat5", "moves": ["d4", "Nf6", "c4", "e6", "g3", "Bb4+"] }
+        ]
+    },
+    {
+        "id": "grunfeld-defense",
+        "name": "Grünfeld Defense",
+        "description": "The Grünfeld Defense is a hypermodern opening where Black allows White to build a strong pawn center, only to challenge and undermine it with active piece play and pressure. It is known for its dynamic and complex positions, often leading to rich tactical and strategic battles.",
+        "color": "black",
+        "lines": [
+            { "name": "Exchange Variation", "id": "gru1", "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "cxd5", "Nxd5", "e4"] },
+            { "name": "Russian System", "id": "gru2", "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "Nf3", "Bg7", "Qb3"] },
+            { "name": "Fianchetto Variation", "id": "gru3", "moves": ["d4", "Nf6", "c4", "g6", "Nf3", "Bg7", "g3", "d5"] },
+            { "name": "Taimanov Variation", "id": "gru4", "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "Bg5"] },
+            { "name": "Brinckmann Attack", "id": "gru5", "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "Bf4"] }
+        ]
+    },
+    {
+        "id": "reti-opening",
+        "name": "Réti Opening",
+        "description": "1.Nf3 develops a piece instead of moving a pawn to begin the game. The knight develops to a good square that controls the center while keeping flexible options with the central pawns. A later d2-d4 move may transpose to a 1.d4 opening (while avoiding certain lines), while a later c2-c4 move might transpose to the English Opening.",
+        "color": "white",
+        "lines": [
+            { "name": "King's Indian Attack", "id": "ret1", "moves": ["Nf3", "d5", "g3"] },
+            { "name": "Advance Variation", "id": "ret2", "moves": ["Nf3", "d5", "c4", "d4"] },
+            { "name": "Capablanca's System", "id": "ret3", "moves": ["Nf3", "Nf6", "c4", "g6", "b4"] },
+            { "name": "Réti Gambit", "id": "ret4", "moves": ["Nf3", "d5", "c4", "dxc4"] },
+            { "name": "New York System", "id": "ret5", "moves": ["Nf3", "d5", "c4", "e6", "g3", "Nf6", "Bg2"] }
+        ]
+    },
+    {
+        "id": "birds-opening",
+        "name": "Bird's Opening",
+        "description": "The Bird's Opening is an aggressive flank opening for White. Championed by the English master Henry Bird, this opening is not popular among the masters of today. However, despite its offbeat quality, the Bird's opening is playable and could be a good surprise weapon for club-level players. The opening also has very little theory, so it can be a good option for players who don't want to study heavy theory.",
+        "color": "white",
+        "lines": [
+            { "name": "From's Gambit", "id": "bird1", "moves": ["f4", "e5"] },
+            { "name": "Dutch Variation", "id": "bird2", "moves": ["f4", "d5"] },
+            { "name": "Lasker Variation", "id": "bird3", "moves": ["f4", "d5", "Nf3", "Nf6", "e3", "c5"] },
+            { "name": "Hobbs Gambit", "id": "bird4", "moves": ["f4", "g5"] },
+            { "name": "Mujannah-Sturm Gambit", "id": "bird5", "moves": ["f4", "d5", "c4"] }
+        ]
+    },
+    {
+        "id": "grob-opening",
+        "name": "Grob's Attack",
+        "description": "The Grob Opening is a dubious flank opening for White. Rarely used by masters, the Grob is still relatively common among club players. Although not as reputable as other openings, the Grob can be very dangerous against unprepared players. Especially effective in blitz and bullet games, this opening can lead to quick wins for White.",
+        "color": "white",
+        "lines": [
+            { "name": "Main Line", "id": "grob1", "moves": ["g4", "d5"] },
+            { "name": "Grob Gambit", "id": "grob2", "moves": ["g4", "d5", "Bg2", "c6"] },
+            { "name": "Keene Defense", "id": "grob3", "moves": ["g4", "e5", "h3"] },
+            { "name": "Romford Countergambit", "id": "grob4", "moves": ["g4", "d5", "Bg2", "Bxg4", "c4"] },
+            { "name": "Fritz Gambit", "id": "grob5", "moves": ["g4", "d5", "Bg2", "Bxg4", "c4", "d4"] }
+        ]
+    },
+    {
+        "id": "polish-opening",
+        "name": "Polish Opening",
+        "description": "The Polish Opening, also known as the Sokolsky or the Orangutan, is the opening 1.b4 by White. Although only the ninth-most popular opening move, it's a respectable option with some devoted followers. Instead of playing in the center, White fights for an advantage on the queenside.",
+        "color": "white",
+        "lines": [
+            { "name": "Main Line", "id": "pol1", "moves": ["b4", "e5"] },
+            { "name": "Outflank Variation", "id": "pol2", "moves": ["b4", "c6"] },
+            { "name": "Bugayev Attack", "id": "pol3", "moves": ["b4", "e5", "a3"] },
+            { "name": "Schiffler-Sokolsky Variation", "id": "pol4", "moves": ["b4", "e5", "Bb2", "f6"] },
+            { "name": "Myers Variation", "id": "pol5", "moves": ["b4", "d5", "Bb2", "c6", "a4"] }
+        ]
+    }
+    ]
+}
