@@ -203,9 +203,10 @@ onMounted(() => {
       // Dynamically import dependencies in the correct order
       await import('@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js');
 
+      const baseUrl = import.meta.env.BASE_URL;
       board.value = new window.Chessboard(boardEl.value, {
         position: 'start',
-        pieceTheme: import.meta.env.BASE_URL + 'img/chesspieces/wikipedia/{piece}.png',
+        pieceTheme: `${baseUrl}img/chesspieces/wikipedia/{piece}.png`,
         orientation: openingData.value?.color || 'white',
         draggable: true,
         moveOffBoard: true,
