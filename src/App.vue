@@ -41,6 +41,8 @@
             v-for="(line, index) in opening.lines"
             :key="line.name"
             :title="line.name"
+          :active="currentLineIndex === index && selectedOpeningId === opening.id"
+          color="primary"
             @click="openingStore.currentLineIndex = index"
           >
             <template v-slot:append>
@@ -73,8 +75,13 @@
   const openedGroups = ref<string[]>([])
 
   watch(selectedOpeningId, (newId) => {
-    openedGroups.value = newId ? [newId] : [];
-  });
+    // Only update the array if the state has actually changed to prevent breaking Vuetify's animations
+    if (newId && !openedGroups.value.includes(newId)) {
+      openedGroups.value = [newId];
+    } else if (!newId && openedGroups.value.length > 0) {
+      openedGroups.value = [];
+    }
+  }, { immediate: true });
 
   // Call the init action when the component is mounted
   onMounted(() => openingStore.init())
