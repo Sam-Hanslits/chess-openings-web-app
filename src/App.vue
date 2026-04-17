@@ -41,8 +41,6 @@
             v-for="(line, index) in opening.lines"
             :key="line.name"
             :title="line.name"
-          :active="currentLineIndex === index && selectedOpeningId === opening.id"
-          color="primary"
             @click="openingStore.currentLineIndex = index"
           >
             <template v-slot:append>
