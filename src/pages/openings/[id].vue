@@ -205,7 +205,7 @@ onMounted(() => {
 
       board.value = new window.Chessboard(boardEl.value, {
         position: 'start',
-        pieceTheme: './public/img/chesspieces/wikipedia/{piece}.png',
+        pieceTheme: (import.meta as any).env.BASE_URL + 'img/chesspieces/wikipedia/{piece}.png',
         orientation: openingData.value?.color || 'white',
         draggable: true,
         moveOffBoard: true,
