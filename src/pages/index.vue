@@ -81,7 +81,7 @@
 <script lang="ts" setup>
 import {
   GoogleAuthProvider,
-  signInWithPopup,
+  signInWithRedirect,
   onAuthStateChanged,
   signOut
 } from "firebase/auth";
@@ -107,7 +107,7 @@ onMounted(() => {
 const withGoogle = async () => {
   const provider = new GoogleAuthProvider();
   try {
-    await signInWithPopup(auth, provider);
+    await signInWithRedirect(auth, provider);
   } catch (error) {
     console.error("Error during sign in:", error);
   }
