@@ -75,13 +75,8 @@
   const openedGroups = ref<string[]>([])
 
   watch(selectedOpeningId, (newId) => {
-    // Only update the array if the state has actually changed to prevent breaking Vuetify's animations
-    if (newId && !openedGroups.value.includes(newId)) {
-      openedGroups.value = [newId];
-    } else if (!newId && openedGroups.value.length > 0) {
-      openedGroups.value = [];
-    }
-  }, { immediate: true });
+    openedGroups.value = newId ? [newId] : [];
+  });
 
   // Call the init action when the component is mounted
   onMounted(() => openingStore.init())
