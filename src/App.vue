@@ -3,14 +3,14 @@
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Openings Teacher</v-toolbar-title>
-      <v-banner-text v-if="userStore.user" class="flex-grow-1 text-right">
-        Signed in as {{ userStore.user.displayName }}
-      </v-banner-text>
-      <v-avatar 
-            v-if="userStore.user && userStore.user.photoURL" 
-            :image="userStore.user.photoURL"
-            style="position: absolute; top: 16px; right: 16px; z-index: 1;"
-          ></v-avatar>
+      <v-spacer></v-spacer>
+      <div v-if="userStore.user" class="d-flex align-center mr-4">
+        <span class="mr-3">Signed in as {{ userStore.user.displayName }}</span>
+        <v-avatar 
+          v-if="userStore.user.photoURL" 
+          :image="userStore.user.photoURL"
+        ></v-avatar>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer">
