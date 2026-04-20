@@ -81,8 +81,7 @@
 <script lang="ts" setup>
 import {
   GoogleAuthProvider,
-  signInWithRedirect,
-  getRedirectResult,
+  signInWithPopup,
   onAuthStateChanged,
   signOut
 } from "firebase/auth";
@@ -104,26 +103,12 @@ onMounted(() => {
       console.warn("Could not initialize opening store:", err);
     });
   });
-
-  // Process the redirect result once the app reloads
-  getRedirectResult(auth)
-    .then((result) => {
-      if (result) {
-        console.log("Successfully signed in via redirect!");
-      }
-    })
-    .catch((error) => {
-      console.error("Firebase Redirect Error:", error);
-      if (error.code === 'auth/unauthorized-domain') {
-        alert("Configuration Error: Please add your GitHub Pages domain to the Firebase Authorized Domains list.");
-      }
-    });
 });
 
 const withGoogle = async () => {
   const provider = new GoogleAuthProvider();
   try {
-    await signInWithRedirect(auth, provider);
+    await signInWithPopup(auth, provider);
   } catch (error) {
     console.error("Error during sign in:", error);
   }

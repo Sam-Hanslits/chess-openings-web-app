@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import type { opening, line } from '@/types/openingTypes'
 import openingsData from '@/data/openings.json'
-import { database } from '../firebase.ts';
+import { database, auth } from '../firebase.ts';
 import { ref, get, child } from 'firebase/database';
 
 export const useOpeningStore = defineStore('openings', {
@@ -15,6 +15,13 @@ export const useOpeningStore = defineStore('openings', {
   actions: {
     async init() {
       try {
+        if (!auth.currentUser) {
+          this.openings = openingsData.openings as opening[];
+          this.selectedOpeningId = null;
+          this.currentLineIndex = 0;
+          return;
+        }
+
         const dbRef = ref(database);
         const snapshot = await get(child(dbRef, 'openings'));
 
