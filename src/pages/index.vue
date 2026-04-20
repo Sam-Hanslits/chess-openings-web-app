@@ -97,11 +97,12 @@ const openingStore = useOpeningStore();
 const userProgressStore = useUserProgressStore();
 
 onMounted(() => {
-  // Load the openings data from the JSON file
-  openingStore.init();
-
   onAuthStateChanged(auth, (currentUser) => {
     userStore.setUser(currentUser);
+
+    openingStore.init().catch(err => {
+      console.warn("Could not initialize opening store:", err);
+    });
   });
 
   // Process the redirect result once the app reloads
