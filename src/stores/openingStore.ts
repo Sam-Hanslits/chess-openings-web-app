@@ -15,12 +15,6 @@ export const useOpeningStore = defineStore('openings', {
   actions: {
     async init() {
       try {
-        if (!auth.currentUser) {
-          this.openings = openingsData.openings as opening[];
-          this.selectedOpeningId = null;
-          this.currentLineIndex = 0;
-          return;
-        }
 
         const dbRef = ref(database);
         const snapshot = await get(child(dbRef, 'openings'));
