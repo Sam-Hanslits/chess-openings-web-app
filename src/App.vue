@@ -3,7 +3,6 @@
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Openings Teacher</v-toolbar-title>
-      <p>openedGroups: {{ openedGroups }}</p>
       <v-spacer></v-spacer>
       <div v-if="userStore.user" class="d-flex align-center mr-4">
         <span class="mr-3">Signed in as {{ userStore.user.displayName }}</span>
@@ -32,7 +31,8 @@
             <v-list-item
               v-bind="props"
               :title="opening.name"
-              :to="`/openings/${opening.id}`"
+              :active="route.params.id === opening.id"
+              @click="router.push(`/openings/${opening.id}`)"
             >
               <template v-slot:append></template>
             </v-list-item>
@@ -62,13 +62,14 @@
 
 <script lang="ts" setup>
   import { ref, onMounted, watch } from 'vue'
-  import { useRoute } from 'vue-router'
+  import { useRoute, useRouter } from 'vue-router'
   import { useOpeningStore } from '@/stores/openingStore'
   import { useUserStore } from '@/stores/userStore'
   import { storeToRefs } from 'pinia'
 
   const drawer = ref(true)
   const route = useRoute()
+  const router = useRouter()
   const openingStore = useOpeningStore()
   const userStore = useUserStore()
   const { openings, currentLineIndex } = storeToRefs(openingStore)
