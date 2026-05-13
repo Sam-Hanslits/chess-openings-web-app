@@ -32,7 +32,7 @@
             <v-list-item
               v-bind="props"
               :title="opening.name"
-              :to="{ name: '/openings/[id]', params: { id: opening.id } }"
+              :to="`/openings/${opening.id}`"
             >
               <template v-slot:append></template>
             </v-list-item>
@@ -62,21 +62,35 @@
 
 <script lang="ts" setup>
   import { ref, onMounted, watch } from 'vue'
+  import { useRoute } from 'vue-router'
   import { useOpeningStore } from '@/stores/openingStore'
   import { useUserStore } from '@/stores/userStore'
   import { storeToRefs } from 'pinia'
 
   const drawer = ref(true)
+  const route = useRoute()
   const openingStore = useOpeningStore()
   const userStore = useUserStore()
-  const { openings, selectedOpeningId, currentLineIndex } = storeToRefs(openingStore)
+  const { openings, currentLineIndex } = storeToRefs(openingStore)
 
-  const openedGroups = ref<string[]>([])
+  const openedGroups = ref<string[]>((route.params as { id?: string }).id ? [(route.params as { id?: string }).id as string] : [])
 
-  watch(selectedOpeningId, (newId) => {
-    openedGroups.value = newId ? [newId] : [];
-  });
+  watch(() => (route.params as { id?: string }).id, (newId) => {
+    const id = newId as string | undefined;
+    if (id) {
+      if (!openedGroups.value.includes(id)) {
+        openedGroups.value.push(id);
+      }
+      // Mutate array in-place to avoid breaking Vuetify's animation proxy
+      for (let i = openedGroups.value.length - 1; i >= 0; i--) {
+        if (openedGroups.value[i] !== id) {
+          openedGroups.value.splice(i, 1);
+        }
+      }
+    } else {
+      openedGroups.value.splice(0, openedGroups.value.length);
+    }
+  })
 
-  // Call the init action when the component is mounted
   onMounted(() => openingStore.init())
 </script>
