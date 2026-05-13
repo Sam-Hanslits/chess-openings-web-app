@@ -3,6 +3,7 @@
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Openings Teacher</v-toolbar-title>
+      <p>openedGroups: {{ openedGroups }}</p>
       <v-spacer></v-spacer>
       <div v-if="userStore.user" class="d-flex align-center mr-4">
         <span class="mr-3">Signed in as {{ userStore.user.displayName }}</span>
