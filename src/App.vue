@@ -31,7 +31,7 @@
             <v-list-item
               v-bind="props"
               :title="opening.name"
-              :to="`/openings/${opening.id}`"
+              :to="{ name: '/openings/[id]', params: { id: opening.id } }"
             >
               <template v-slot:append></template>
             </v-list-item>
