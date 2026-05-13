@@ -61,21 +61,22 @@
 
 <script lang="ts" setup>
   import { ref, onMounted, watch } from 'vue'
+  import { useRoute } from 'vue-router'
   import { useOpeningStore } from '@/stores/openingStore'
   import { useUserStore } from '@/stores/userStore'
   import { storeToRefs } from 'pinia'
 
   const drawer = ref(true)
+  const route = useRoute()
   const openingStore = useOpeningStore()
   const userStore = useUserStore()
-  const { openings, selectedOpeningId, currentLineIndex } = storeToRefs(openingStore)
+  const { openings, currentLineIndex } = storeToRefs(openingStore)
 
-  const openedGroups = ref<string[]>([])
+  const openedGroups = ref<string[]>(route.params.id ? [route.params.id as string] : [])
 
-  watch(selectedOpeningId, (newId) => {
-    openedGroups.value = newId ? [newId] : [];
-  });
+  watch(() => route.params.id, (newId) => {
+    openedGroups.value = newId ? [newId as string] : []
+  })
 
-  // Call the init action when the component is mounted
   onMounted(() => openingStore.init())
 </script>
