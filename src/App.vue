@@ -72,9 +72,9 @@
   const userStore = useUserStore()
   const { openings, currentLineIndex } = storeToRefs(openingStore)
 
-  const openedGroups = ref<string[]>(route.params.id ? [route.params.id as string] : [])
+  const openedGroups = ref<string[]>((route.params as { id?: string }).id ? [(route.params as { id?: string }).id as string] : [])
 
-  watch(() => route.params.id, (newId) => {
+  watch(() => (route.params as { id?: string }).id, (newId) => {
     openedGroups.value = newId ? [newId as string] : []
   })
 
