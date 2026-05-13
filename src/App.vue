@@ -31,7 +31,7 @@
             <v-list-item
               v-bind="props"
               :title="opening.name"
-              :active="route.params.id === opening.id"
+              :active="currentRouteId === opening.id"
               @click="router.push(`/openings/${opening.id}`)"
             >
               <template v-slot:append></template>
@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref, onMounted, watch } from 'vue'
+  import { ref, onMounted, watch, computed } from 'vue'
   import { useRoute, useRouter } from 'vue-router'
   import { useOpeningStore } from '@/stores/openingStore'
   import { useUserStore } from '@/stores/userStore'
@@ -74,10 +74,11 @@
   const userStore = useUserStore()
   const { openings, currentLineIndex } = storeToRefs(openingStore)
 
-  const openedGroups = ref<string[]>((route.params as { id?: string }).id ? [(route.params as { id?: string }).id as string] : [])
+  const currentRouteId = computed(() => (route.params as { id?: string }).id)
 
-  watch(() => (route.params as { id?: string }).id, (newId) => {
-    const id = newId as string | undefined;
+  const openedGroups = ref<string[]>(currentRouteId.value ? [currentRouteId.value] : [])
+
+  watch(currentRouteId, (id) => {
     if (id) {
       if (!openedGroups.value.includes(id)) {
         openedGroups.value.push(id);
