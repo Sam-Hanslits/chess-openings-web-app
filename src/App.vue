@@ -75,7 +75,20 @@
   const openedGroups = ref<string[]>((route.params as { id?: string }).id ? [(route.params as { id?: string }).id as string] : [])
 
   watch(() => (route.params as { id?: string }).id, (newId) => {
-    openedGroups.value = newId ? [newId as string] : []
+    const id = newId as string | undefined;
+    if (id) {
+      if (!openedGroups.value.includes(id)) {
+        openedGroups.value.push(id);
+      }
+      // Mutate array in-place to avoid breaking Vuetify's animation proxy
+      for (let i = openedGroups.value.length - 1; i >= 0; i--) {
+        if (openedGroups.value[i] !== id) {
+          openedGroups.value.splice(i, 1);
+        }
+      }
+    } else {
+      openedGroups.value.splice(0, openedGroups.value.length);
+    }
   })
 
   onMounted(() => openingStore.init())
